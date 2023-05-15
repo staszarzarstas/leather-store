@@ -5,21 +5,21 @@ const prices = document.getElementsByClassName('item-price')
 
 currency.addEventListener('click', function (e) {
     let currectCurrency = e.target.innerText
-    let newCurrency = '$'
+    let newCurrency = '₽'
     let coeff
 
-    if (currectCurrency === '$') {
-        newCurrency = '₽';
-        coeff = 80;
-    } else if (currectCurrency === '₽') {
+    if (currectCurrency === '₽') {
+        newCurrency = '$';
+        coeff = 0.77;
+    } else if (currectCurrency === '$') {
         newCurrency = '€';
         coeff = 0.9;
     } else if (currectCurrency === '€') {
         newCurrency = '¥';
-        coeff = 6.9;
+        coeff = 7.2;
     } else if (currectCurrency === '¥') {
-        newCurrency = '$';
-        coeff = 1;
+        newCurrency = '₽';
+        coeff = 80;
     }
 
     e.target.innerText = newCurrency
