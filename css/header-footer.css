@@ -11,7 +11,7 @@
 }
 
 .header .container{
-    position: fixed;
+    /* position: fixed; */
     z-index: 5;
     left: 20%;
     display: flex;
