@@ -1,0 +1,124 @@
+/*header*/
+.main{
+    overflow: hidden;
+    background-image: url("../img/style/main_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.header{
+    padding: 40px 0;
+}
+
+.header .container{
+    position: fixed;
+    z-index: 5;
+    left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo .img{
+    vertical-align: bottom;
+}
+
+.main-title{
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.menu{
+    margin-left: 191px;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+}
+
+.menu-item{
+    margin-right: 88px;
+}
+
+.menu-item a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu-item a:hover{
+    border-bottom: 2px solid white;
+    transition: all 0.3ms ease;
+}
+
+.currency{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: auto;
+    user-select: none;
+}
+
+/*главная страница - новое меню*/
+
+.main-content{
+    padding-top: 103px;
+    padding-bottom: 199px;
+}
+
+.main-content .container{
+    position: relative;
+}
+
+.main-info{
+    max-width: 608px;
+}
+
+.main-small-info{
+    background: #D3320F;
+    border-radius: 100px;
+    padding: 12px 16px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.main-text{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 56px;
+}
+
+.main-image{
+    position: absolute;
+    top: -123px;
+    left: calc(100% - 991px);
+}
+
+/*footer*/
+
+.footer{
+    padding: 60px 0;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights{
+    font-size: 16px;
+    line-height: 20px;
+}
