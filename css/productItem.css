@@ -2,10 +2,6 @@
 /*products-item*/
 
 .products{
-    background-image: url('../img/style/burgers_bg.png');
-    background-position: top center;
-    background-size: 1400px;
-    background-repeat: no-repeat;
     padding-bottom: 180px;
 }
 
@@ -14,6 +10,7 @@
     grid-template-columns: repeat(3, 348px);
     gap: 24px;
     margin-top: 60px;
+    text-align: center;
 }
 
 .products-item{
@@ -24,7 +21,7 @@
 }
 
 .products-item-img{
-    height: 250px;
+    height: 215px;
 }
 
 .products-item-img img{
@@ -59,4 +56,43 @@
 
 .products-action{
     margin-left: 52px;
+}
+
+
+/*салаты*/
+
+#salads{
+    background-image: url('../img/style/whybg.png');
+    background-position: top center;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+
+.salads.products-item-title{
+    color: #211A16;
+}
+
+/*бургеры*/
+#products{
+    background-image: url('../img/style/burgers_bg.png'); 
+    background-position: top center;
+    background-size: 1400px;
+    background-repeat: no-repeat;
+}
+
+/*пицца*/
+
+.pizza.products-item-img img{
+    height: 170px;
+    width: 170px;
+}
+
+.pizza.products-item-img{
+    height: 160px;
+}
+
+#pizza{
+    background-image: url('../img/style/main_bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
 }
