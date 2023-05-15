@@ -1,0 +1,57 @@
+@import './reset.css';
+@import './whyWe.css';
+@import './header-footer.css';
+@import './productItem.css';
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Black.ttf');
+}
+
+body{
+    background:  #191411;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.button{
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    border-radius: 8px;
+    width: 260px;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    color: #191411;
+    font-weight: 600;
+}
+
+.button:hover{
+    background: #d8a733;
+}
