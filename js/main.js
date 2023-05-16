@@ -25,6 +25,7 @@ for (let i = 0; i < linksfooter.length; i++){
 
 
 
+
 //кнопки "заказать"
 // let buttons = document.getElementsByClassName('product-button')
 // for (let i = 0; i < buttons.length; i++){

@@ -31,7 +31,7 @@
 
 .items__control:hover {
     background: #eb5a1e;
-    color: #FFF;
+    color: var(--white);
 }
 
 .items__current {
@@ -47,7 +47,7 @@
 }
 
 .price__weight {
-	color: #6c757d!important;
+	color: var(--productWeigth)!important;
 	font-size: 80%;
 	line-height: 1;
 }
@@ -58,7 +58,7 @@
 	line-height: 1;
 }
 
-маленькое отображение товаров в корзине
+/* маленькое отображение товаров в корзине */
 .items.items--small {
 	width: 90px;
 	font-size: 16px;
