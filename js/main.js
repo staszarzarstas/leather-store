@@ -2,7 +2,7 @@
 
 //посмотреть новое меню
 document.getElementById('main-info').onclick = function () {
-    document.getElementById('products').scrollIntoView({behavior: 'smooth'})
+    document.getElementById('sofas').scrollIntoView({behavior: 'smooth'})
 }
 
 //ссылки из header
