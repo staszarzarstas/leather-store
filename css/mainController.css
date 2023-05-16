@@ -3,6 +3,22 @@
 @import './header-footer.css';
 @import './productItem.css';
 @import './сart.css';
+@import './lightTheme.css';
+
+:root{
+    --main-color: #191411;
+    --white: white;
+    --mainred:#D3320F;
+    --buttonYellow:#d8a733;
+
+    --productWeigth:#6c757d;
+    --itemBorder:#353535;
+
+    --darkText:#211A16;
+    --lightBackground:#e8dcc6;
+    --lightBack: #e4b546;
+    --lightBorder:#d3ad92;
+}
 
 
 @font-face {
@@ -15,10 +31,14 @@
     src: url('../fonts/Merriweather-Black.ttf');
 }
 
+html{
+    background: var(--main-color);
+}
+
 body{
-    background:  #191411;
+    background:  var(--main-color);
     font-family: 'Gilroy', sans-serif;
-    color: white;
+    color: var(--white);
 }
 
 .container{
@@ -49,10 +69,10 @@ body{
     cursor: pointer;
     outline: none;
     font-size: 18px;
-    color: #191411;
+    color: var(--main-color);
     font-weight: 600;
 }
 
 .button:hover{
-    background: #d8a733;
+    background: var(--buttonYellow);
 }
