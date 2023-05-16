@@ -15,13 +15,13 @@
 
 .products-item{
     padding: 30px;
-    background-color: #211A16;
-    border: 1px solid #353535;
+    background-color: var(--darkText);
+    border: 1px solid var(--itemBorder);
     border-radius: 16px;
 }
 
 .products-item-img{
-    height: 215px;
+    height: 220px;
 }
 
 .products-item-img img{
@@ -61,23 +61,8 @@
 
 /*салаты*/
 
-#salads{
-    background-image: url('../img/style/whybg.png');
-    background-position: top center;
-    background-size: initial;
-    background-repeat: no-repeat;
-}
-
 .salads.products-item-title{
-    color: #211A16;
-}
-
-/*бургеры*/
-#products{
-    background-image: url('../img/style/burgers_bg.png'); 
-    background-position: top center;
-    background-size: 1400px;
-    background-repeat: no-repeat;
+    color: var(--darkText);
 }
 
 /*пицца*/
@@ -89,12 +74,6 @@
 
 .pizza.products-item-img{
     height: 160px;
-}
-
-#pizza{
-    background-image: url('../img/style/main_bg.png');
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
 /*суши*/
