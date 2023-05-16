@@ -1,14 +1,29 @@
 //скрол ссылок
+
+//посмотреть новое меню
 document.getElementById('main-info').onclick = function () {
     document.getElementById('products').scrollIntoView({behavior: 'smooth'})
 }
 
+//ссылки из header
 let links = document.querySelectorAll('.menu-item > a')
 for (let i = 0; i < links.length; i++){
     links[i].onclick = function () {
         document.getElementById(links[i].getAttribute("data-link")).scrollIntoView({behavior: 'smooth'})
     }
 }
+
+//ссылки из footer
+
+let linksfooter = document.querySelectorAll('.footer-item > a')
+for (let i = 0; i < linksfooter.length; i++){
+    linksfooter[i].onclick = function () {
+        document.getElementById(linksfooter[i].getAttribute("data-link")).scrollIntoView({behavior: 'smooth'})
+    }
+}
+
+
+
 
 //кнопки "заказать"
 // let buttons = document.getElementsByClassName('product-button')
