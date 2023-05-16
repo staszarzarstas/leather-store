@@ -1,14 +1,15 @@
 /*смена темы на тёмную/светлую*/
 .theme {
-    position: fixed;
+    position: absolute;
+    cursor: pointer;
     right: 5rem;
-    top: 5rem;
+    top: 4.3rem;
     font-size: 16px;
     color: var(--main-color);
-    background: var(--mainred);
+    background: var(--lightBack);
     border: none;
     border-radius: 20em;
-    width: 100px;
+    width: 120px;
     height: 50px;
 }
 
