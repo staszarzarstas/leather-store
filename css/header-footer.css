@@ -11,11 +11,12 @@
 }
 
 .header .container{
-    /* position: fixed; */
+    position: fixed;
     z-index: 5;
-    left: 20%;
+    margin-left: 140px;
     display: flex;
     align-items: center;
+    margin-top: 5px;
 }
 
 .logo .img{
@@ -106,6 +107,32 @@
     left: calc(100% - 991px);
 }
 
+/*кнопка вернуться наверх*/
+.back-to-top {
+    position: fixed;
+    right: 6rem;
+    bottom: 5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #D3320F;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+    opacity: 60%;
+}
+
+.hidden {
+    display: none;
+    opacity: 0%;
+}
+
+
 /*footer*/
 
 .footer{
@@ -115,10 +142,29 @@
 .footer .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .rights{
     font-size: 16px;
     line-height: 20px;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer-item a {
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-item a:hover{
+    border-bottom: 1px solid white;
+    transition: all 0.3ms ease;
 }
