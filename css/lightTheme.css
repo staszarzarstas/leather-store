@@ -1,0 +1,49 @@
+/*смена темы на тёмную/светлую*/
+.theme {
+    position: fixed;
+    right: 5rem;
+    top: 5rem;
+    font-size: 16px;
+    color: var(--main-color);
+    background: var(--mainred);
+    border: none;
+    border-radius: 20em;
+    width: 100px;
+    height: 50px;
+}
+
+.light .theme{
+    background: var(--lightBackground);
+    color: var(--main-color);
+}
+
+html.light, .light body{
+    background: var(--lightBack);
+    color: var(--main-color);
+}
+
+.light .products-item{
+    background: var(--lightBackground);
+    border: 1px solid var(--lightBorder);
+}
+
+.light .menu-item a,
+.light .footer-item a{
+    color: var(--main-color);
+}
+
+.light .menu-item a:hover,
+.light .footer-item a:hover{
+    border-bottom: 1px solid var(--main-color);
+}
+
+.light .main-small-info,
+.light .back-to-top{
+    background: var(--lightBackground);
+
+}
+
+.light .back-to-top{
+    color: var(--lightBack);
+}
+
