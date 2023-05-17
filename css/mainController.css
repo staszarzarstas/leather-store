@@ -47,6 +47,8 @@ body{
     margin: 0 auto;
 }
 
+
+
 .title{
     font-family: 'Merriweather', sans-serif;
     font-size: 50px;
@@ -77,4 +79,69 @@ body{
 .button:hover{
     background: var(--mainred);
     color: var(--white);
+}
+
+/*адаптивность*/
+
+@media (max-width: 1199px) {
+
+    .theme{
+        top: 10rem;
+        right: -9rem;
+    }
+
+    .main-image {
+        top: 45px;
+        left: 520px;
+    }
+
+    .back-to-top{
+        right: 2rem;
+    }
+
+    .header .container{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .title{
+        font-size: 45px;
+        margin-left: 325px;
+    }
+
+    .header .container {
+        margin-left: 50px;
+    }
+
+    .main-content{
+        margin-left: 25px;
+    }
+
+    .main-image{
+        left: 467px;
+    }
+}
+
+@media (max-width: 575px) {
+    .theme {
+        right: -43rem;
+    }
+
+    .main-title{
+        font-size: 36px;
+    }
+
+    .main-text {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .main-image{
+        left: 390px;
+    }
+
+    .footer{
+        margin-left: 25px;
+    }
 }
