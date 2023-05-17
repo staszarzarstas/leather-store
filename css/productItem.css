@@ -2,7 +2,7 @@
 /*products-item*/
 
 .products{
-    padding-bottom: 180px;
+    padding-bottom: 100px;
 }
 
 .products-items{
@@ -14,14 +14,14 @@
 }
 
 .products-item{
-    padding: 30px;
+    padding: 25px;
     background-color: var(--darkText);
     border: 1px solid var(--itemBorder);
     border-radius: 16px;
 }
 
 .products-item-img{
-    height: 220px;
+    height: 200px;
 }
 
 .products-item-img img{
@@ -31,13 +31,31 @@
 .products-item-title{
     font-size: 23px;
     line-height: 29px;
-    padding: 24px 0;
+    padding: 15px 0;
     text-align: center;
+}
+
+.price {
+	text-align: left;
+	margin-top: -10px;
+}
+
+.price__weight {
+	color: var(--productWeigth)!important;
+	font-size: 80%;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+.price__currency {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1;
 }
 
 .products-item-text{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 23px;
     margin-bottom: 24px;
 }
 
@@ -45,9 +63,9 @@
 .button.product-button{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 182px;
-    height: 62px;
+    justify-content: space-around;
+    width: 180px;
+    height: 50px;
 }
 
 .button.product-button span:first-child{
@@ -59,24 +77,3 @@
 }
 
 
-/*салаты*/
-
-.salads.products-item-title{
-    color: var(--darkText);
-}
-
-/*пицца*/
-
-.pizza.products-item-img img{
-    height: 170px;
-    width: 170px;
-}
-
-.pizza.products-item-img{
-    height: 160px;
-}
-
-/*суши*/
-.sushi{
-    margin-top: -35px;
-}

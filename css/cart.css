@@ -24,6 +24,8 @@
 	font-size: 18px;
 	height: 30px;
 	overflow: hidden;
+	align-items: center;
+	align-items: center;
 }
 
 .items__control {
@@ -45,22 +47,7 @@
 
 /*цена и вес*/
 
-.price {
-	text-align: left;
-	margin-top: -7px;
-}
 
-.price__weight {
-	color: var(--productWeigth)!important;
-	font-size: 80%;
-	line-height: 1;
-}
-
-.price__currency {
-	font-size: 1.5rem;
-	font-weight: 600;
-	line-height: 1;
-}
 
 /* маленькое отображение товаров в корзине */
 .items.items--small {
