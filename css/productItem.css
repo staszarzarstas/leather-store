@@ -37,7 +37,7 @@
 
 .price {
 	text-align: left;
-	margin-top: -10px;
+	margin-top: -4px;
 }
 
 .price__weight {
@@ -61,19 +61,15 @@
 
 
 .button.product-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
     width: 180px;
     height: 50px;
+    transition: all 0.3s ease-in;
 }
 
-.button.product-button span:first-child{
-    margin-right: 10px;
-}
 
 .products-action{
-    margin-left: 52px;
+    margin-left: 65px;
 }
 
 

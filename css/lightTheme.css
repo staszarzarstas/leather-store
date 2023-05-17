@@ -13,10 +13,6 @@
     height: 50px;
 }
 
-.light .theme{
-    background: var(--lightBackground);
-    color: var(--main-color);
-}
 
 html.light, .light body{
     background: var(--lightBack);
@@ -24,8 +20,8 @@ html.light, .light body{
 }
 
 .light .products-item{
-    background: var(--lightBackground);
-    border: 1px solid var(--lightBorder);
+    background: var(--lightBack);
+    border: 1px solid var(--lightBackground);
 }
 
 .light .menu-item a,
@@ -39,8 +35,12 @@ html.light, .light body{
 }
 
 .light .main-small-info,
-.light .back-to-top{
+.light .back-to-top,
+.light .theme,
+.light .items,
+.light .product-button{
     background: var(--lightBackground);
+    color: var(--white);
 
 }
 
@@ -48,3 +48,18 @@ html.light, .light body{
     color: var(--lightBack);
 }
 
+.light .circle{
+    background-color: var(--lightBackground);
+}
+
+.light .button:hover{
+    background-color: var(--lightBackground);
+    opacity: 60%;
+
+}
+
+.light .items__control:hover{
+    background-color: var(--lightBackground);
+    opacity: 60%;
+
+}
