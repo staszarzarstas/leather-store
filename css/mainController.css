@@ -1,9 +1,8 @@
 @import './reset.css';
-@import './whyWe.css';
 @import './header-footer.css';
 @import './productItem.css';
-@import './сart.css';
 @import './lightTheme.css';
+@import './help.css';
 @import './cart.css';
 
 :root{

@@ -1,53 +1,3 @@
-/*Корзина*/
-
-.cartIcon{
-    cursor: pointer;
-}
-
-.details-wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-bottom: 25px;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.items {
-	font-family: 'Merriweather', serif;
-	background: var(--mainred);
-	border-radius: 8px;
-	width: 120px;
-	display: flex;
-	font-size: 18px;
-	height: 30px;
-	overflow: hidden;
-	align-items: center;
-	align-items: center;
-}
-
-.items__control {
-	width: 40px;
-	cursor: pointer;
-	transition: 0.2s ease-in;
-	text-align: center;
-}
-
-.items__control:hover {
-    background: var(--mainred);
-    color: var(--white);
-}
-
-.items__current {
-	width: 40px;
-	text-align: center;
-}
-
-
-
-/* маленькое отображение товаров в корзине */
 .items.items--small {
 	width: 90px;
 	font-size: 16px;
@@ -62,4 +12,3 @@
 .items.items--small .items__current {
 	width: 30px;
 }
-
