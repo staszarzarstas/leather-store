@@ -14,7 +14,7 @@ function renderProducts(productsArray) {
         const productHTML = `
 					<div class="products-item" data-id="${item.id}">
 						<div class="products-item-img"> 
-							<img src="./img/items/sofa/${item.imgSrc}" alt="Упс...">
+							<img src="./img/items/sofa/${item.imgSrc}" alt="Упс..." class="productImg">
 						</div>
 
 						<div class="products-item-title">${item.title}</div>
@@ -34,7 +34,7 @@ function renderProducts(productsArray) {
 						</div>
 
 						<div class="products-action">
-                            <button class="button product-button">
+                            <button data-cart class="button product-button">
                                 В корзину
                             </button>
                         </div>
