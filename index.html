@@ -21,7 +21,7 @@
                         <li class="menu-item"><a data-link="wardrobes"><div class="circle"><img src="./img/style/wardrobe.svg" alt="Упс.." title="Шкафы"></div></a></li>
                         <li class="menu-item"><a data-link="sofas"><div class="circle"><img src="./img/style/beds.svg" alt="Упс.." title="Кровати и диваны"></div></a></li>
                         <li class="menu-item"><a data-link="kitchen"><div class="circle"><img src="./img/style/kitchens.svg" alt="Упс.." title="Кухни"></div></a></li>
-                        <li class="menu-item"><a data-link="cart"><div class="circle"><img src="./img/style/cart.svg" alt="Упс.." title="Корзина"></div></a></li>
+                        <li class="menu-item"><a class="cartIcon"><div class="circle"><img src="./img/style/cart.svg" alt="Упс.." title="Корзина"></div></a></li>
                         <li class="menu-item"><a data-link="help"><div class="circle"><img src="./img/style/help.svg" alt="Упс.." title="Связаться с нами"></div></a></li>
                     </ul>
                 </nav>
@@ -47,6 +47,47 @@
 
         <button class="back-to-top hidden" title="Вернуться наверх">	&#9650;</button>
     </section>
+
+    <section class="showCart">
+        <form action="/somewhere_else">
+			<div class="card-body">
+                <div class="cartHeader">
+                    <h5 class="card-title">Ваш заказ</h4>
+                    <div class="cancel">&#10008;</div>
+                </div>
+                
+
+                <div data-cart-empty> Корзина пуста </div>
+
+                <div class="cart-wrapper"></div>
+
+                <!-- Стоимость заказа -->
+                <div class="cart-total">
+                    <p data-cart-delivery class="">
+                        <span>Доставка:</span>
+                        <span class="delivery-cost">250 ₽</span><br>
+                        <span>Бесплатно при заказе от 600 ₽</span>
+                    </p>
+                    <p><span>Итого:</span>
+                        <span class="total-price">0</span>
+                        <span class="rouble">₽</span></p>
+                </div>
+            </div>
+
+            <!-- Оформить заказ -->
+            <div id="order-form" class="card-body">
+                <h5 class="card-title">Оформить заказ</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="submit" class="free">Заказать</button>
+                </form>
+            </div>
+
+        </form>
+    </section>
+
 
 
     <section class="products" id="chairs">
@@ -1290,6 +1331,7 @@
 
 	<script src="./js/SofasRender.js"></script>
 	<script src="./js/ChangeTheme.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/backToTopButton.js"></script>
 </body>

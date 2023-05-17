@@ -1,3 +1,32 @@
+.showCart{
+	display: none;
+}
+
+.cancel {
+	cursor: pointer;
+}
+
+.showCart.visible{
+	display: block;
+	z-index: 10;
+	position: fixed;
+	width: 620px;
+	height: 300px;
+	top: 160px;
+	left: 460px;
+	background-color: var(--lightBack);
+}
+
+
+
+.cart-total {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+
+
 .items.items--small {
 	width: 90px;
 	font-size: 16px;
@@ -11,4 +40,17 @@
 
 .items.items--small .items__current {
 	width: 30px;
+}
+
+
+.free {
+	color: #0EA107;
+}
+
+.total-price {
+	color: #EB5A1E;
+}
+
+.rouble {
+	color: #EB5A1E;
 }
