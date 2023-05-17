@@ -2,7 +2,7 @@
 
 //скрол для меню
 document.getElementById('main-info').onclick = function () {
-    document.getElementById('products').scrollIntoView({behavior: 'smooth'})
+    document.getElementById('chairs').scrollIntoView({behavior: 'smooth'})
 }
 
 //ссылки из header
