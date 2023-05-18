@@ -44,7 +44,7 @@ helpButton.addEventListener('click', function () {
             item.value = ''
         })
         helpInfo.classList.add('none')
-        helpText.innerText = 'Мы скоро свяжемся с вами!'
+        helpText.innerText = 'Мы скоро свяжемся с Вами!'
     }
 })
 
