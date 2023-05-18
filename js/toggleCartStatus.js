@@ -15,6 +15,8 @@ function toggleCartStatus() {
 		total.classList.add('none')
     }
 
+	amount.innerText = cartWrapper.children.length 
+
 }
 
 function calcCartPriceAndDelivery() {
