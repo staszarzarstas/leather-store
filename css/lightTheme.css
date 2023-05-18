@@ -1,9 +1,6 @@
 /*смена темы на тёмную/светлую*/
 .theme {
-    position: absolute;
     cursor: pointer;
-    right: 5rem;
-    top: 4.3rem;
     font-size: 16px;
     color: var(--main-color);
     background: var(--lightBack);
@@ -52,7 +49,8 @@ html.light, .light body{
 
 .light .circle,
 .light .free,
-.light .card-body{
+.light .card-body,
+.light .showCart.visible{
     background-color: var(--lightBackground);
 }
 
@@ -73,4 +71,10 @@ html.light, .light body{
 
 .light .help-form-input input{
     color: var(--productWeigth);
+}
+
+.light .rouble,
+.light .total-price,
+.light .delivery-cost{
+    color: var(--white);
 }

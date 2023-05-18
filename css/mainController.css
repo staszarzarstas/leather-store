@@ -88,14 +88,9 @@ body{
 
 @media (max-width: 1199px) {
 
-    .theme{
-        top: 10rem;
-        right: -9rem;
-    }
-
     .main-image {
         top: 45px;
-        left: 520px;
+        left: 465px;
     }
 
     .back-to-top{
@@ -103,7 +98,7 @@ body{
     }
 
     .header .container{
-        margin-left: 90px;
+        margin-left: 55px;
     }
 }
 
@@ -124,12 +119,11 @@ body{
     .main-image{
         left: 467px;
     }
+
 }
 
 @media (max-width: 575px) {
-    .theme {
-        right: -43rem;
-    }
+
 
     .main-title{
         font-size: 36px;
@@ -148,3 +142,4 @@ body{
         margin-left: 25px;
     }
 }
+
