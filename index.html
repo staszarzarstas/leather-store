@@ -49,8 +49,8 @@
     </section>
 
     <div class="purchase">
-                <section class="showCart visible">
-            <form action="./cart.html">
+                <section class="showCart">
+            <form action="./done.html">
                 <div class="card-body">
                     <div class="cartHeader">
                         <h5 class="card-title">Ваш заказ:</h4>
@@ -77,7 +77,7 @@
                                 <h5 class="card-title">Способ оплаты:</h4>
                                 <form>
                                     <div class="form-group">
-                                        <input type="radio" name="payment" value="cash" id="cash-value" class="radio-hidden">
+                                        <input type="radio" name="payment" value="cash" id="cash-value" class="radio-hidden" required>
 						                <label for="cash-value" class="radio-label">Наличные</label>
 
                                         <input type="radio" name="payment" value="card" id="card-value" class="radio-hidden">
@@ -89,7 +89,10 @@
                                         <input type="radio" name="payment" value="loan" id="loan-value" class="radio-hidden">
 						                <label for="loan-value" class="radio-label">В кредит</label>
 
+                                        <textarea name="extra" id="userComment" cols="30" rows="3" maxlength="2000" placeholder="Оставить комментарий"></textarea>
+
                                     </div>
+
                                     <button  class="freeDelivery confirm disabled" >Оформить заказ</button>
                                 </form>
                             </div>
