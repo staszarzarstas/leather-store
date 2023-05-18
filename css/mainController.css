@@ -80,6 +80,10 @@ body{
     color: var(--white);
 }
 
+.none{
+    display: none;
+}
+
 /*адаптивность*/
 
 @media (max-width: 1199px) {
