@@ -21,20 +21,20 @@
                         <li class="menu-item"><a data-link="wardrobes"><div class="circle"><img src="./img/style/wardrobe.svg" alt="Упс.." title="Шкафы"></div></a></li>
                         <li class="menu-item"><a data-link="sofas"><div class="circle"><img src="./img/style/beds.svg" alt="Упс.." title="Кровати и диваны"></div></a></li>
                         <li class="menu-item"><a data-link="kitchen"><div class="circle"><img src="./img/style/kitchens.svg" alt="Упс.." title="Кухни"></div></a></li>
-                        <li class="menu-item"><a class="cartIcon"><div class="circle"><img src="./img/style/cart.svg" alt="Упс.." title="Корзина"></div></a></li>
                         <li class="menu-item"><a data-link="help"><div class="circle"><img src="./img/style/help.svg" alt="Упс.." title="Связаться с нами"></div></a></li>
+                        
                     </ul>
                 </nav>
             </div>
-            <button class="theme themetoggle">
-                <span class="ThemeInfo"></span>
-            </button>
         </header>
         
         <section class="main-content">
             <div class="container">
                 <div class="main-info">
                     <span class="main-small-info">Новая коллекция</span>
+                    <button class="theme themetoggle">
+                        <span class="ThemeInfo"></span>
+                    </button>
                     <h4 class="main-title"> Качество, идущее в ногу с комфортом</h4>
                     <p class="main-text">Cпешите заказать сезонные новинки и насладиться комфортом и качеством мебели. Мы готовы сделать бизайн-проект вашего дома бесплатно.</p>
                     <div class="main-action">
@@ -48,44 +48,62 @@
         <button class="back-to-top hidden" title="Вернуться наверх">	&#9650;</button>
     </section>
 
-    <section class="showCart visible">
-        <form action="/somewhere_else">
-			<div class="card-body">
-                <div class="cartHeader">
-                    <h5 class="card-title">Ваш заказ:</h4>
-                    <div class="cancel">&#10008;</div>
-                </div>
-                
+    <div class="purchase">
+                <section class="showCart visible">
+            <form action="./cart.html">
+                <div class="card-body">
+                    <div class="cartHeader">
+                        <h5 class="card-title">Ваш заказ:</h4>
+                        <div class="cancel">&#10008;</div>
+                    </div>
+                    
 
-                <div data-cart-empty class="empty"> Корзина пуста </div>
+                    <div data-cart-empty class="empty"> Корзина пуста </div>
 
-                <div class="cartContent">
-                    <div class="cart-wrapper"></div>
+                    <div class="cartContent">
+                        <div class="cart-wrapper"></div>
 
-                    <div class="cart-total">
-                        <p data-cart-delivery class="none">
-                            <span>Доставка:</span>
-                            <span class="delivery-cost">2500 ₽</span><br>
-                            <span class="deliveryText">Бесплатно при заказе от 50000 ₽</span>
-                        </p>
-                        <p class="emptyBucket none"><span>Итого:</span>
-                            <span class="total-price">0</span>
-                            <span class="rouble">₽</span></p>
+                        <div class="cart-total">
+                            <p data-cart-delivery class="none">
+                                <span>Доставка:</span>
+                                <span class="delivery-cost">2500 ₽</span><br>
+                                <span class="deliveryText">Бесплатно при заказе от 50000 ₽</span>
+                            </p>
+                            <p class="emptyBucket none"><span>Итого:</span>
+                                <span class="total-price">0</span>
+                                <span class="rouble">₽</span></p>
 
-                        <div id="order-form" class="card-body none">
-                            <h5 class="card-title">Оформить заказ:</h4>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Ваш номер телефона">
-                                </div>
-                                <button type="submit" class="free">Заказать</button>
-                            </form>
+                            <div id="order-form" class="card-body none">
+                                <h5 class="card-title">Способ оплаты:</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="radio" name="payment" value="cash" id="cash-value" class="radio-hidden">
+						                <label for="cash-value" class="radio-label">Наличные</label>
+
+                                        <input type="radio" name="payment" value="card" id="card-value" class="radio-hidden">
+						                <label for="card-value" class="radio-label">По карте в офисе</label>
+
+                                        <input type="radio" name="payment" value="online" id="online-value" class="radio-hidden">
+						                <label for="online-value" class="radio-label">Онлайн</label>
+
+                                        <input type="radio" name="payment" value="loan" id="loan-value" class="radio-hidden">
+						                <label for="loan-value" class="radio-label">В кредит</label>
+
+                                    </div>
+                                    <button  class="freeDelivery confirm disabled" >Оформить заказ</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
-    </section>
+            </form>
+        </section>
+
+        <button class="cart cartIcon" id="cart" title="Купить">
+            <img class="cart__image" src="./img/style/cart.svg" alt="Cart" />
+            <div class="cart__num" id="cart_num">0</div>
+        </button>
+    </div>
 
 
 
