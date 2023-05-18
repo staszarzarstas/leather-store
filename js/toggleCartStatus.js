@@ -34,7 +34,7 @@ function calcCartPriceAndDelivery() {
 		priceTotal += parseInt(item.innerText) * parseInt(amountEl.innerText);
 	});
 
-	totalPriceEl.innerText = priceTotal;
+	
 
 	if (priceTotal > 0) {
 		cartDelivery.classList.remove('none');
@@ -46,9 +46,11 @@ function calcCartPriceAndDelivery() {
 		deliveryCost.classList.add('free');
 		deliveryCost.innerText = 'бесплатно';
         deliveryText.innerText = ''
+		totalPriceEl.innerText = priceTotal;
 	} else {
 		deliveryCost.classList.remove('free');
 		deliveryCost.innerText = '2500 ₽';
         deliveryText.innerText = 'Бесплатно при заказе от 50000 ₽'
+		totalPriceEl.innerText = priceTotal + 2500;
 	}
 }
