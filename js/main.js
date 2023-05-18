@@ -47,3 +47,4 @@ helpButton.addEventListener('click', function () {
         helpText.innerText = 'Мы скоро свяжемся с вами!'
     }
 })
+

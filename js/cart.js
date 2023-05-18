@@ -5,6 +5,8 @@ const cartButton = document.querySelector('.cartIcon')
 const cartFrame = document.querySelector('.showCart')
 const close = document.querySelector('.cancel')
 
+const amount = document.querySelector('.cart__num')
+
 cartButton.addEventListener('click', function (){
     cartFrame.classList.toggle('visible')
 })
@@ -46,6 +48,7 @@ window.addEventListener('click', function (event) {
 });
 
 
+
 const cartWrapper =  document.querySelector('.cart-wrapper');
 
 window.addEventListener('click', function (event) {
@@ -61,6 +64,7 @@ window.addEventListener('click', function (event) {
 			price: card.querySelector('.price__currency').innerText,
 			counter: card.querySelector('[data-counter]').innerText,
 		};
+
 
 
 		const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
@@ -104,3 +108,17 @@ window.addEventListener('click', function (event) {
 
 	}
 });
+
+
+
+//валидация кнопки в корзине
+
+const paymentType = document.querySelectorAll('input[name="payment"]')
+const confirm = document.querySelector('.confirm')
+
+for (const pay of paymentType){
+	pay.addEventListener('click', function () {
+		confirm.classList.remove('disabled')
+	}
+
+	)}

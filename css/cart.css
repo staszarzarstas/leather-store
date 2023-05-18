@@ -1,13 +1,71 @@
+.purchase{
+	position: relative;
+}
+
+/*символ корзины*/
+.cart {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--lightBackground);
+    transition: 0.1s;
+    cursor: pointer;
+    position: fixed; 
+    top: 50px; 
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+}
+
+.cart__num {
+    position: absolute;
+    background-color: var(--mainred);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    top: -5px;
+    right: -5px;
+}
+
+/*стилизация блока корзины*/
 .showCart{
 	display: none;
 }
 
+.showCart.visible{
+	display: block;
+	z-index: 10;
+	min-width: 300px;
+	max-width:800px;
+	max-height: 420px;
+	overflow-y:auto;
+    position: fixed; 
+    top: 130px; 
+    right: 45px;
+	background-color: var(--lightBack);
+	border-radius: 16px;
+	box-sizing: border-box;
+	padding: 15px;
+}
 .cancel {
 	cursor: pointer;
 }
 
 .cart-wrapper{
-	margin-right: 10px;
+	margin-right: 17px;
 }
 
 .empty{
@@ -16,19 +74,7 @@
 	padding-bottom: 5px;
 }
 
-.showCart.visible{
-	display: block;
-	z-index: 10;
-	position: absolute;
-	min-width: 300px;
-	max-width:800px;
-	top: 160px;
-	right: 5rem;
-	background-color: var(--lightBack);
-	border-radius: 16px;
-	box-sizing: border-box;
-	padding: 15px;
-}
+/*содержание корзины*/
 
 .card-body{
 	border-radius: 16px;
@@ -55,7 +101,7 @@
 }
 
 
-
+/*левый блок корзины с отображением покупок*/
 
 .cart-item__top {
 	display: flex;
@@ -117,18 +163,28 @@
 	width: 30px;
 }
 
+/*правый блок с отображением условий доставки/ оплаты и цены*/
 
-.free {
+.freeDelivery{
 	color: var(--white);
 	cursor: pointer;
 	font-size: 16px;
-
-
 	background-color: var(--mainred);
 	width: 160px;
 	height: 35px;
 	margin-top: 10px;
 	border-radius: 25px;
+}
+
+.disabled{
+	background-color:grey;
+	color: black;
+	opacity: 30%;
+	cursor:not-allowed;
+}
+
+.free {
+	color: var(--mainred);
 }
 
 .total-price,
@@ -139,3 +195,40 @@
 .emptyBucket{
 	margin-bottom: 15px;
 }
+
+/*radio buttons*/
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+}
+
+.radio-hidden {
+	opacity: 0;
+	appearance: none;
+	height: 0;
+	width: 0;
+	margin: 0;
+}
+
+.radio-label {
+	display: inline-block;
+	width: 135px;
+	height: 23px;
+	background-color: var(--lightBackground);
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 16px;
+	margin: 3px 0;
+}
+
+.radio-label:hover{
+	opacity: 80%;
+}
+
+.radio-hidden:checked + .radio-label {
+	background-color: var(--mainred);
+}
+
