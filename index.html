@@ -48,43 +48,42 @@
         <button class="back-to-top hidden" title="Вернуться наверх">	&#9650;</button>
     </section>
 
-    <section class="showCart">
+    <section class="showCart visible">
         <form action="/somewhere_else">
 			<div class="card-body">
                 <div class="cartHeader">
-                    <h5 class="card-title">Ваш заказ</h4>
+                    <h5 class="card-title">Ваш заказ:</h4>
                     <div class="cancel">&#10008;</div>
                 </div>
                 
 
-                <div data-cart-empty> Корзина пуста </div>
+                <div data-cart-empty class="empty"> Корзина пуста </div>
 
-                <div class="cart-wrapper"></div>
+                <div class="cartContent">
+                    <div class="cart-wrapper"></div>
 
-                <!-- Стоимость заказа -->
-                <div class="cart-total">
-                    <p data-cart-delivery class="none">
-                        <span>Доставка:</span>
-                        <span class="delivery-cost">2500 ₽</span><br>
-                        <span class="deliveryText">Бесплатно при заказе от 50000 ₽</span>
-                    </p>
-                    <p><span>Итого:</span>
-                        <span class="total-price">0</span>
-                        <span class="rouble">₽</span></p>
+                    <div class="cart-total">
+                        <p data-cart-delivery class="none">
+                            <span>Доставка:</span>
+                            <span class="delivery-cost">2500 ₽</span><br>
+                            <span class="deliveryText">Бесплатно при заказе от 50000 ₽</span>
+                        </p>
+                        <p class="emptyBucket none"><span>Итого:</span>
+                            <span class="total-price">0</span>
+                            <span class="rouble">₽</span></p>
+
+                        <div id="order-form" class="card-body none">
+                            <h5 class="card-title">Оформить заказ:</h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                                </div>
+                                <button type="submit" class="free">Заказать</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Оформить заказ -->
-            <div id="order-form" class="card-body none">
-                <h5 class="card-title">Оформить заказ</h4>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Ваш номер телефона">
-                    </div>
-                    <button type="submit" class="free">Заказать</button>
-                </form>
-            </div>
-
         </form>
     </section>
 
@@ -195,12 +194,12 @@
                         </div>
 
                         <div class="price">
-                            <div data-cart class="price__currency">2300 ₽</div>
+                            <div  class="price__currency">2300 ₽</div>
                         </div>
                     </div>
 
                     <div class="products-action">
-                        <button class="button product-button"> В корзину
+                        <button data-cart class="button product-button"> В корзину
 
                         </button>
                     </div>
@@ -252,12 +251,12 @@
                         </div>
 
                         <div class="price">
-                            <div data-cart class="price__currency">2200 ₽</div>
+                            <div  class="price__currency">2200 ₽</div>
                         </div>
                     </div>
 
                     <div class="products-action">
-                        <button class="button product-button"> В корзину
+                        <button data-cart class="button product-button"> В корзину
 
                         </button>
                     </div>

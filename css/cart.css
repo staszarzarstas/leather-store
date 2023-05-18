@@ -6,32 +6,107 @@
 	cursor: pointer;
 }
 
+.cart-wrapper{
+	margin-right: 10px;
+}
+
+.empty{
+	text-align: center;
+	color: var(--main-color);
+	padding-bottom: 5px;
+}
+
 .showCart.visible{
 	display: block;
 	z-index: 10;
-	position: fixed;
-	width: 620px;
-	height: 300px;
+	position: absolute;
+	min-width: 300px;
+	max-width:800px;
 	top: 160px;
-	left: 460px;
+	right: 5rem;
 	background-color: var(--lightBack);
+	border-radius: 16px;
+	box-sizing: border-box;
+	padding: 15px;
 }
 
+.card-body{
+	border-radius: 16px;
 
+}
+
+.cartHeader{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding: 10px 25px;
+	color: var(--main-color);
+}
+
+.cartContent{
+	display: flex;
+	justify-content: space-around;
+	color: var(--main-color);
+}
 
 .cart-total {
-	font-size: 18px;
 	font-weight: 500;
+	font-size: 14px;
 }
 
 
+
+
+.cart-item__top {
+	display: flex;
+	align-items: flex-start;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+}
+
+.cart-item__img img {
+	max-width: 100px;
+	height: auto;
+}
+
+.cart-item__desc {
+	padding-left: 15px;
+	max-width: 208px;
+}
+
+.cart-item__title {
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+    line-height: 1.2;
+	margin-bottom: 5px;
+}
+
+.cart-item__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.cart-item__details {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.cart-item__details .price__currency {
+	font-size: 16px;
+	margin-left: 15px;
+}
 
 
 .items.items--small {
-	width: 90px;
+	width: 80px;
 	font-size: 16px;
-	height: 26px;
+	height: 25px;
 	text-align: center;
+	color: var(--white);
 }
 
 .items.items--small .items__control {
@@ -44,13 +119,23 @@
 
 
 .free {
-	color: #0EA107;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 16px;
+
+
+	background-color: var(--mainred);
+	width: 160px;
+	height: 35px;
+	margin-top: 10px;
+	border-radius: 25px;
 }
 
-.total-price {
-	color: #EB5A1E;
-}
-
+.total-price,
 .rouble {
-	color: #EB5A1E;
+	color: var(--mainred);
+}
+
+.emptyBucket{
+	margin-bottom: 15px;
 }

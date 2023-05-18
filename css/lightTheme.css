@@ -50,7 +50,9 @@ html.light, .light body{
     color: var(--lightBack);
 }
 
-.light .circle{
+.light .circle,
+.light .free,
+.light .card-body{
     background-color: var(--lightBackground);
 }
 
