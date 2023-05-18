@@ -13,10 +13,11 @@
 
     --productWeigth:#6c757d;
     --itemBorder:#353535;
+    --LightTheme: #6e737c;
 
     --darkText:#211A16;
     --lightBackground:#abb4c4;
-    --lightBack: #E5E5CB;
+    --lightBack: #f4f4f4;
     --lightBorder:#d3ad92;
 }
 
@@ -73,6 +74,7 @@ body{
     font-size: 18px;
     color: var(--main-color);
     font-weight: 600;
+    transition: all 0.3s ease-in;
 }
 
 .button:hover{
