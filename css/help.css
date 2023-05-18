@@ -3,12 +3,10 @@
     background: var(--darkText);
     border: 1px solid var(--itemBorder);
     border-radius: 16px;
-    margin-top: 60px;
     max-width: 650px;
     box-sizing: border-box;
     padding: 60px 40px;
-    margin-top: 15px;
-    margin: 0 auto;
+    margin: 60px auto;
 }
 
 .help-form-text{
