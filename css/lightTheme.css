@@ -50,10 +50,7 @@ html.light, .light body{
     background-color: var(--lightBackground);
 }
 
-.light .items__control:hover{
-    background-color: var(--lightBackground);
-    opacity: 60%;
-}
+
 
 .light .help-form-input{
     background: var(--productWeigth);
@@ -84,8 +81,14 @@ html.light, .light body{
 
 .light .product-button,
 .light .items,
-.light .main-small-info,
 .light .button:hover,
 .light .back-to-top{
     background-color: var(--LightTheme);
 }
+
+.light .main-small-info{
+    background-color: var(--itemBorder);
+    color: var(--white);
+}
+
+.light .logo{ filter: invert(22%) sepia(28%) saturate(5743%) hue-rotate(14deg) brightness(98%) contrast(91%); }
