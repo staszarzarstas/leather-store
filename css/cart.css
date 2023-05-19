@@ -11,7 +11,7 @@
     transition: all 0.4s ease-in;
     cursor: pointer;
     position: fixed; 
-    top: 50px; 
+    top: 155px; 
     right: 50px;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@
 	max-height: 420px;
 	overflow-y:auto;
     position: fixed; 
-    top: 130px; 
+    top: 245px; 
     right: 45px;
 	background-color: var(--lightBack);
 	border-radius: 16px;

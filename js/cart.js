@@ -3,18 +3,23 @@
 
 const cartButton = document.querySelector('.cartIcon')
 const cartFrame = document.querySelector('.showCart')
-const close = document.querySelector('.cancel')
-
+const closeCart = document.querySelector('.cancel')
 const amount = document.querySelector('.cart__num')
+
+
+//кнопки для открытия и закрытия корзины
 
 cartButton.addEventListener('click', function (){
     cartFrame.classList.toggle('visible')
 })
 
-close.addEventListener('click', function () {
+closeCart.addEventListener('click', function () {
     cartFrame.classList.remove('visible')
 })
 
+
+
+//добавление товаров в корзину
 
 window.addEventListener('click', function (event) {
 
@@ -22,18 +27,18 @@ window.addEventListener('click', function (event) {
 
     if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
 		const counterWrapper = event.target.closest('.counter-wrapper');
-        counter = counterWrapper.querySelector('[data-counter]');
+        counter = counterWrapper.querySelector('#amountInput');
 	}
 
 	if (event.target.dataset.action === 'plus') {
-		counter.innerText = ++counter.innerText;
+		counter.value = ++counter.value;
 	}
 
 	if (event.target.dataset.action === 'minus') {
 
-		if (parseInt(counter.innerText) > 1) {
-			counter.innerText = --counter.innerText;
-		} else if (event.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 1) {
+		if (parseInt(counter.value) > 1) {
+			counter.value = --counter.value;
+		} else if (event.target.closest('.cart-wrapper') && parseInt(counter.value) === 1) {
 			event.target.closest('.cart-item').remove();
 
 			toggleCartStatus();
@@ -49,6 +54,7 @@ window.addEventListener('click', function (event) {
 });
 
 
+//генерация товара в карточки корзины
 
 const cartWrapper =  document.querySelector('.cart-wrapper');
 
@@ -63,9 +69,8 @@ window.addEventListener('click', function (event) {
 			title: card.querySelector('.products-item-title').innerText,
 			art: card.querySelector('.price__weight').innerText,
 			price: card.querySelector('.price__currency').innerText,
-			counter: card.querySelector('[data-counter]').innerText,
+			counter: card.querySelector('[data-counter]').value,
 		};
-
 
 
 		const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
@@ -87,7 +92,7 @@ window.addEventListener('click', function (event) {
 										<div class="cart-item__details">
 											<div class="items items--small counter-wrapper">
 												<div class="items__control" data-action="minus">-</div>
-												<div class="items__current" data-counter="">${productInfo.counter}</div>
+												<input type="number" min="1" max="200" value=${productInfo.counter} id="amountInput" class="items__current"  data-counter>
 												<div class="items__control" data-action="plus">+</div>
 											</div>
 											<div class="price">
@@ -101,7 +106,7 @@ window.addEventListener('click', function (event) {
 			cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
 		}
 
-		card.querySelector('[data-counter]').innerText = '1';
+		card.querySelector('#amountInput').value = '1';
 
 		toggleCartStatus();
 
@@ -121,5 +126,4 @@ for (const pay of paymentType){
 	pay.addEventListener('click', function () {
 		confirm.classList.remove('disabled')
 	}
-
-	)}
+)}

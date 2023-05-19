@@ -109,7 +109,7 @@ kitchens.forEach ((kitchen) => {
 		<div class="details-wrapper">
 			<div class="items counter-wrapper">
 				<div class="items__control" data-action="minus">-</div>
-				<div class="items__current" data-counter>1</div>
+				<input type="number" min="1" max="200" value="1" id="amountInput" class="items__current"  data-counter>
 				<div class="items__control" data-action="plus">+</div>
 			</div>
 
@@ -119,7 +119,7 @@ kitchens.forEach ((kitchen) => {
 		</div>
 
 		<div class="products-action">
-			<button data-cart class="button product-button"> В корзину
+			<button data-cart class="button glow-on-hover product-button"> В корзину
 
 			</button>
 		</div>

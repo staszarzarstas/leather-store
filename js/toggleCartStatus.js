@@ -30,8 +30,8 @@ function calcCartPriceAndDelivery() {
 	let priceTotal = 0;
 
 	priceElements.forEach(function (item) {
-		const amountEl = item.closest('.cart-item').querySelector('[data-counter]');
-		priceTotal += parseInt(item.innerText) * parseInt(amountEl.innerText);
+		const amountEl = item.closest('.cart-item').querySelector('#amountInput');
+		priceTotal += parseInt(item.innerText) * parseInt(amountEl.value);
 	});
 
 	
