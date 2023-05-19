@@ -14,6 +14,15 @@ for (let i = 0; i < links.length; i++){
     }
 }
 
+//ссылки из footer
+
+let footerLinks = document.querySelectorAll('.footer-item > a')
+for (let i = 0; i < footerLinks.length; i++){
+    footerLinks[i].onclick = function () {
+        document.getElementById(footerLinks[i].getAttribute("data-link")).scrollIntoView({behavior: 'smooth'})
+    }
+}
+
 
 //валидация инпутов для отправки данных менеджеру
 
