@@ -15,6 +15,7 @@ close.addEventListener('click', function () {
     cartFrame.classList.remove('visible')
 })
 
+
 window.addEventListener('click', function (event) {
 
     let counter;
