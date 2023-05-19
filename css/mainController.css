@@ -77,9 +77,65 @@ body{
     transition: all 0.3s ease-in;
 }
 
-.button:hover{
-    background: var(--mainred);
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
     color: var(--white);
+    background: var(--itemBorder);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #d3ad92, #c7a90b, #d8a733, #abb4c4, #6e737c,#d3ad92 );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--itemBorder);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 .none{
@@ -106,7 +162,7 @@ body{
 
 @media (max-width: 991px) {
     .title{
-        font-size: 45px;
+        font-size: 32px;
         margin-left: 325px;
     }
 
@@ -122,6 +178,17 @@ body{
         left: 467px;
     }
 
+    .help-form{
+        margin: 25px auto;
+    }
+    
+    .help-form-input{
+        max-width: 465px;
+    }
+
+    .help-form-input input{
+        max-width: 460px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -142,6 +209,10 @@ body{
 
     .footer{
         margin-left: 25px;
+    }
+
+    .help-form{
+        width: 550px;
     }
 }
 
