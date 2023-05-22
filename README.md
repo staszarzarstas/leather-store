@@ -48,6 +48,9 @@
 2. анимация переходов
 -------------------------------------------------
 
-В работе:
+Репозиторий проекта: https://github.com/AlinaK96/Furniture <br>
+Посмотреть онлайн: https://alinak96.github.io/Furniture/ <br>
+<br>
 
+![Вид:](./img/style/final.png)
 
