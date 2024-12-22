@@ -66,4 +66,4 @@
 
 
 ### Онлайн-версия  
-[alinak96.github.io/Furniture](https://staszarzarstas.github.io/leather-store/)  
+[staszarzarstas.github.io/leather-store](https://staszarzarstas.github.io/leather-store/)  
