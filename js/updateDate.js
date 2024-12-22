@@ -5,14 +5,14 @@
 const date = new Date(document.lastModified);
 
 const weekDays = ['0','Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
-const monthNames = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря']
+const monthNames = ['Январь', 'Февраль', 'Марть', 'Апрель', 'Маь', 'Июнь', 'Июль', 'Августь', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
 
 let day = date.getDay()
 let week = getNumberOfWeek()
 let month = date.getMonth()
 const year = date.getFullYear()
 
-let dataUpdate = `${weekDays[day]}, ${week} неделя ${monthNames[month]}, ${year} года`
+let dataUpdate = `  ${monthNames[month]}, ${year} года`
 
 
 function getNumberOfWeek() {
